@@ -1,0 +1,112 @@
+*{
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background-color: #264653;
+        display: flex;
+        flex-flow: row nowrap;           
+    }
+        .logo{
+            background-color: #e76f51;
+            flex: 1 1 auto;
+        }
+        .nav-bar{
+            background-color: #e76f51;
+            flex: 5 1 auto;
+        }
+        .social{
+            background-color: #e76f51;
+            flex: 1 1 auto;
+        }
+
+    .claim{
+        background-color: #fb5607;
+    }
+        h1{
+            background-color: #ffbe0b;
+        }
+
+.section{
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+}
+    .articles{
+        background-color: #3d405b;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .article{
+            background-color: #0077b6;
+            flex: 1 1 40%;
+        }
+        .navigation{
+            background-color: #48cae4;
+            flex: 1 1 100%;
+        }
+    .aside{
+        background-color: #e63946;
+        flex: 1 1 auto;
+    }
+        .object{
+            background-color:#ffd60a;
+        }
+
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    }
+    .copyright{
+        background-color: #ffbe0b;
+        width: 100%;
+}
+
+@media only screen and (min-width: 415px) and (max-width: 768px){
+    .section{
+        background-color: yellow;
+        flex-flow: column wrap;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .menu{
+        flex-flow: column wrap;
+    }
+    .section{
+        background-color:#ffbe0b;
+        flex-flow: column wrap;
+    }
+        .articles{
+        flex-flow: column wrap;
+        background-color: #003566;
+        }
+            .article{
+                background-color: #00b4d8;
+            }
+            .navigation{
+                background-color: #90e0ef;
+            }
+    .aside{
+        background-color: #fb5607;
+    }
+        .object{
+            background-color: peru;
+        }
+}
